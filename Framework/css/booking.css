@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&family=Prompt&family=Sigmar&display=swap');
+
+
+body {
+  /* font-family: 'Noto Sans', sans-serif; Use Noto Sans as primary font */
+  background-color: rgba(#FBFCFF);
+}
+
+.navbar {
+  background-color :#1B3764;
+  height: 80px;
+  position: relative;
+}
+
+.navbar-brand{
+  font-weight: 500;
+  color: #fff !important;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.login-button{
+  background-color: #ffffff;
+  color:#1B3764;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius:50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  margin-right: 20px;
+}
+
+.login-button:hover{
+  background-color: #bfc2c9;
+}
+
+.offcanvas-body {
+  background-color: #1B3764; 
+}
+
+.navbar-toggler .line {
+  background-color: #fff; /* Warna garis (putih) */
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-toggler .line {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  margin: 4px 5px 5px auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler .line {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+
+.nav-link{
+  color:#ffffff !important;
+  font-weight: 500;
+  position:relative;
+  
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover, .nav-link.active{
+  color:white;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  transform: translateX(-50%);
+  width: 0; /* Mulai dengan lebar garis 0 */
+  height: 2px;
+  background-color: #ffffff; /* Warna garis yang diinginkan */
+  visibility: hidden;
+  transition: width 0.3s ease-in-out; /* Efek transisi lebar garis */
+}
+
+.navbar-nav .nav-link:hover::before, 
+.navbar-nav .nav-link.active::before {
+  width: calc(100% - 20px); /* Lebar garis saat hover atau aktif */
+  visibility: visible;
+}
+
+@media (min-width: 991px){
+  .nav-link:before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height : 2px;
+    background-color:#ffffff;
+    visibility: hidden;
+    width: calc(100% - 20px);
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+  }
+  
+  .nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+  }
+}
+.navbar-toggler.collapsed .nav-link {
+  color: black !important;
+}
+
+.container1 {
+  background-color: none;  /* Darker gray background */
+  padding: 5rem;              /* Adjust padding as needed */
+  border-radius: 0.5rem;      /* Add rounded corners */
+  position: relative;          /* Increase margin from top */
+}
+
+
+.container1 .row {
+  color: #1B3764;
+}
+
+/* Responsive button styles */
+.btn-primary {
+  padding: 10px 20px;
+  font-size: calc(0.5rem + 0.3vw); /* Responsive font size */
+  border: none;
+  border-radius: 5px;
+  background-color: #1B3764 !important;
+}
+
+.btn-primary:hover{
+  background-color: #05112c !important;
+}
+
+.text-center {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 215px; /* Adjust margin as needed */
+}
+
+
+
+
+.footer {
+  background-color: #1B3764;
+  color: white;
+  padding: 30px 20px; /* Menambahkan padding atas dan bawah */
+  text-align: center; 
+  flex-shrink: 0; 
+  position: relative;
+} 
+
+.footer .container {
+  display: flex;
+  justify-content: space-around; 
+} 
+
+.footer .row { 
+  text-align: left; 
+} 
+
+.footer h5 {
+  margin-bottom: 10px; 
+}  
+
+.footer p {
+  margin-bottom: 10px; 
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home {
+  flex: 1 0 auto;
+}
+
+

@@ -1,0 +1,17 @@
+.card {
+    width: 18rem; /* Ubah sesuai kebutuhan */
+    height: auto; /* Atur tinggi card secara otomatis */
+}
+.card img {
+    width: 100%; /* Gambar mengisi lebar card */
+    height: auto; /* Tinggi gambar menyesuaikan lebar */
+}
+.card-body {
+    padding: 1rem; /* Atur padding di dalam card */
+}
+.card-title {
+    font-size: 1.25rem; /* Ubah ukuran font judul */
+}
+.card-text {
+    font-size: 1rem; /* Ubah ukuran font teks */
+}
